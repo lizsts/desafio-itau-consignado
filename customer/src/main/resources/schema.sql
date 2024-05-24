@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS CLIENTES (
+  id           INT PRIMARY KEY AUTO_INCREMENT,
+  nome         VARCHAR(255) NOT NULL,
+  cpf          VARCHAR(14) NOT NULL UNIQUE,
+  correntista  BOOLEAN NOT NULL,
+  segmento     VARCHAR(20) NOT NULL,
+  convenio     VARCHAR (20) NOT NULL
+);
